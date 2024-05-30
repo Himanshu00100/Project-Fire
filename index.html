@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Buy Cycles Online at Best Price, India | Gear Cycles | Firefox Bikes</title>
 
 </head>
 
 <body>
     <!-- header from here -->
-    <header class="w-full h-[77.600px] bg-black px-[60px] pt-[30px]">
+    <header id="navbar"
+        class="  z-[10] fixed    w-full h-[77.600px] bg-gradient-to-b from-[#00000030] from-[5%] to-transparent to-[95%] px-[60px] pt-[30px] transition-[background] duration-[500ms]">
         <!-- logo with nav section starts from here -->
         <div class="w-full h-[47.600px] bg--transparent flex">
             <!-- logo container -->
@@ -115,7 +117,7 @@
                 <!-- bike service -->
                 <div
                     class="key flex justify-center items-center flex-col gap-x-[10px] cursor-pointer hover:text-orange-500 duration-[400ms]">
-                    <a href="#"><span>BIKE SERVICE</span></a>
+                    <a class="text-nowrap" href="#"><span>BIKE SERVICE</span></a>
                     <span class="underline w-[1%] opacity-0 h-[1px] bg-orange-400 duration-300 ease-out "></span>
                 </div>
 
@@ -158,11 +160,52 @@
         </div>
         <!-- logo withb nmav section ends here -->
     </header>
+    <main class="w-full ">
+        <!-- hero 1 section frokm here -->
+        <div class="w-full h-[750.350px] flex justify-center overflow-hidden ">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <a href="#"><img src="./Assets/hero 1/img1.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./Assets/hero 1/img2.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./Assets/hero 1/img3.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./Assets/hero 1/img4.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./Assets/hero 1/img5.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./Assets/hero 1/img6.jpg" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- hero 1 section ends here -->
+
+    </main>
 
 
 
 
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 5000,
+
+            }
+        });
+    </script>
 
 </body>
 
