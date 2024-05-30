@@ -796,6 +796,22 @@ video {
   top: -px;
 }
 
+.bottom-\[100px\] {
+  bottom: 100px;
+}
+
+.right-\[15px\] {
+  right: 15px;
+}
+
+.bottom-\[80px\] {
+  bottom: 80px;
+}
+
+.bottom-\[60px\] {
+  bottom: 60px;
+}
+
 .z-\[\] {
   z-index: ;
 }
@@ -1128,6 +1144,10 @@ video {
 
 .w-\[265px\] {
   width: 265px;
+}
+
+.w-\[60px\] {
+  width: 60px;
 }
 
 .translate-y-\[\] {
@@ -1850,6 +1870,11 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-orange-300 {
+  --tw-shadow-color: #fdba74;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .transition-all {
