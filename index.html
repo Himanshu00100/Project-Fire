@@ -18,26 +18,83 @@
         <div class="w-full h-[47.600px] bg--transparent flex">
             <!-- logo container -->
             <div class="w-[211px] h-[47.600px]">
-                <img src=""
+                <img src="https://www.firefoxbikes.com/on/demandware.static/-/Sites-HeroFirefox-Library/default/dw341554ba/logo.svg"
                     alt="">
             </div>
             <!-- navkeys from here -->
             <nav
                 class=" h-[47.600px] flex justify-center bg-transparent items-center  text-white text-[14px] ml-[160px] pb-[10px] gap-x-[42px] tracking-[1px] ">
                 <!-- bikes -->
-                <div
-                    class=" key  flex justify-center items-center flex-col gap-x-[10px] cursor-pointer hover:text-orange-500 duration-[400ms]  overflow-hidden  ">
-                    <span>BIKES
-                        <i class="fa-solid fa-angle-down text-[15px]"></i></span>
-
+                <div id="bikekey"
+                    class=" key   flex justify-center items-center flex-col gap-x-[10px] cursor-pointer hover:text-orange-500 duration-[400ms]   relative  ">
+                    <span class="flex gap-x-[10px] items-center">
+                        <p>BIKES</p>
+                        <i class="angledown fa-solid fa-angle-down text-[15px] duration-300 ease-out"></i>
+                    </span>
                     <span class="underline w-[1%] opacity-0 h-[1px] bg-orange-400 duration-300 ease-out "></span>
+
+                    <!-- bikedropdown from here -->
+                    <div
+                        class="bikedrop dropdown none  invisible opacity-0 absolute bottom-[-483px] h-[465px] w-[210px] bg-gradient-to-b from-[#434548] from-[79%]  to-[#2c2c2c] t0-[4%] transition-all duration-[500ms] ease-out translate-y-[50px] shadow-lg">
+                        <div class="w-full h-full relative flex justify-center">
+                            <!-- arrow -->
+                            <i class="fa-solid fa-square-full absolute top-[-5px] text-[#434548] rotate-[45deg] "></i>
+                            <div class="w-full h-full pt-[20px] pl-[35px] cursor-default hover:text-white">
+                                <ul class=" flex flex-col gap-y-[12px]">
+                                    <li class="key w-full hover:text-orange-500 duration-300 relative"><a class="w-full"
+                                            href="#">MOUNTAIN BIKES</a>
+                                        <span
+                                            class="underline w-[1%] opacity-0 h-[1px] bg-orange-400 duration-300 ease-out "></span>
+                                    </li>
+                                    <li class="w-full  hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">HYBRID BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full" href="#">BAD
+                                            ATTITUDE</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">GRAVEL BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">ROAD BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">WOMEN BIOKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">KIDS BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">JUNIOR BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">SPECIALTY
+                                            BIKES</a></li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">ELECTRIC BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">GEARED BIKES</a>
+                                    </li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">SINGLE SPEED
+                                            BIKES</a></li>
+                                    <li class="w-full hover:text-orange-500 duration-300"><a class="w-full"
+                                            href="#">VIEW ALL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- accessories -->
 
                 <div
                     class="key flex justify-center items-center flex-col gap-x-[10px] cursor-pointer hover:text-orange-500 duration-[400ms]">
-                    <span>ACCESSORIES
-                        <i class="fa-solid fa-angle-down text-[15px]"></i></span>
+                    <span class="flex gap-x-[10px] items-center">
+                        <p>ACCESSORIES</p>
+                        <i class="angledown fa-solid fa-angle-down text-[15px] duration-300 ease-out"></i>
+                    </span>
                     <span class="underline w-[1%] opacity-0 h-[1px] bg-orange-400 duration-300 ease-out "></span>
                 </div>
 
@@ -71,23 +128,31 @@
             <div
                 class="w-[200px] h-[47.600px]  ml-[190px] flex justify-center  text-orange-500 text-[22px] gap-x-[40px] pl-[8px] ">
                 <!-- search -->
-                <div class="cursor-pointer">
-                    <i class="fa-solid fa-magnifying-glass "></i>
+                <div id="searchkey" class="pulsekey cursor-pointer relative  ">
+                    <i class="fa-solid fa-magnifying-glass  "></i>
+                    <span
+                        class="absolute pulse bottom-[15px] left-[-5px] z-[0] w-[30px] bg-orange-400 opacity-0 h-[30px] animate-ping  rounded-full flex justify-center hover:opacity-[0.6] "></span>
 
                 </div>
                 <!-- location -->
-                <div class="cursor-pointer">
+                <div id="locationkey" class="pulsekey cursor-pointer relative">
                     <i class="fa-solid fa-location-dot"></i>
+                    <span
+                        class="absolute pulse bottom-[15px] left-[-5px] z-[0] w-[30px] bg-orange-400 opacity-0 h-[30px] animate-ping  rounded-full flex justify-center hover:opacity-[0.6] "></span>
                 </div>
                 <!-- shopping cart -->
-                <div class="relative cursor-pointer">
+                <div id="shoppingkey" class="relative cursor-pointer">
                     <i class="fa-brands fa-opencart"></i>
                     <span
                         class="absolute right-[-2px] top-[-2px] rounded-full bg-white text-orange-500 px-[3px] text-[12px] font-[500]">0</span>
+                    <span
+                        class="absolute pulse bottom-[15px] left-[-5px] z-[0] w-[30px] bg-orange-400 opacity-0 h-[30px] animate-ping  rounded-full flex justify-center hover:opacity-[0.6] "></span>
                 </div>
                 <!-- user profile -->
-                <div class="cursor-pointer">
+                <div id="userkey" class="cursor-pointer relative">
                     <i class="fa-regular fa-user"></i>
+                    <span
+                        class="absolute pulse bottom-[15px] left-[-5px] z-[0] w-[30px] bg-orange-400 opacity-0 h-[30px] animate-ping  rounded-full flex justify-center hover:opacity-[0.6] "></span>
                 </div>
             </div>
         </div>

@@ -12,3 +12,17 @@ body {
    width:100%;
    
 }
+
+.key:hover .dropdown{
+    display:block;
+    visibility:visible;
+    opacity:1;
+    transform:translateY(0px);
+}
+.key:hover .angledown{
+    transform:rotate(180deg);
+}
+
+/* .pulsekey:hover .pulse{
+    opacity:0.6;
+} */
