@@ -10,15 +10,29 @@ window.addEventListener("scroll", () => {
     }
     else {
         navbar.classList.remove("activenav")
-        
 
-        
+
+
     }
 
 
 })
 
-// best seller's card slider from here
+
+
+// share scrips from here
+
+// activesharebar(".share1", ".sharebar1")
+
+// const activesharebar = (el1, el2) => {
+//      let element1=document.querySelector(el1)
+//      let element2=document.querySelector(el2)
+//      element1.classList.remove("hidden")
+//      element1.classList.remove("hidden")
+
+// }
+
+
 
 
 
