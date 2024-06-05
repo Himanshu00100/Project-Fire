@@ -17,3 +17,8 @@ window.addEventListener("scroll", () => {
 
 
 })
+
+// best seller's card slider from here
+
+
+

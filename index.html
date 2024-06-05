@@ -163,7 +163,8 @@
     <main class="w-full ">
 
         <!-- chatbox from here -->
-        <div class="z-[10] fixed right-[15px] bottom-[60px] rounded-full shadow-md shadow-orange-300 bg-orange-500 flex justify-center items-center">
+        <div
+            class="z-[10] fixed right-[15px] bottom-[60px] rounded-full shadow-md shadow-orange-300 bg-orange-500 flex justify-center items-center">
             <a href="#"><img class="w-[60px]" src="./Assets/msg/msg.png" alt=""></a>
         </div>
         <!-- chatbox ends here -->
@@ -194,6 +195,7 @@
                     </div>
 
                 </div>
+                <div class="swiper-pagination "></div>
             </div>
 
         </div>
@@ -262,6 +264,26 @@
             </div>
         </div>
 
+        <!-- best seller's section starts from here -->
+        <div class="w-full h-auto py-[40px] bg-[#f6f6f6]">
+            <div class="w-full h-[622px]  flex flex-col justify-center px-[175px]">
+                <!-- heading  -->
+                <div class="flex flex-col relative mb-[50px]">
+                    <h2 class="text-[#3f4351] text-[40px] font-[700] drop-shadow-md ">BEST</h2>
+                    <span
+                        class="absolute  bottom-[-20px] text-[#3f4351] text-[40px] font-[700] opacity-[0.5]">SELLERS</span>
+                </div>
+
+                <div class="w-[1170px] h-[487px] bg-green-500 overflow-x-hidden flex justify-center">
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
     </main>
 
 
@@ -274,7 +296,11 @@
             autoplay: {
                 delay: 5000,
 
-            }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
         });
     </script>
 

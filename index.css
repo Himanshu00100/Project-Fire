@@ -7,10 +7,10 @@ body {
 
 /* navbar animation from here */
 
-.activenav{
-    position:fixed;
-    
-    background-color:black;
+.activenav {
+    position: fixed;
+
+    background-color: black;
 }
 
 .inactivenavbar {
@@ -41,17 +41,21 @@ body {
     opacity:0.6;
 } */
 
-/* hero 1 slider from here */
-.swiper {
-    width: 100%;
-    height: 100%;
-}
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* best seller's card slider from here */
