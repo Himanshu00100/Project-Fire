@@ -265,16 +265,91 @@
         </div>
 
         <!-- best seller's section starts from here -->
-        <div class="w-full h-auto py-[40px] bg-[#f6f6f6]">
+
+        <div class=" w-full h-auto py-[40px] bg-[#f6f6f6]">
             <div class="w-full h-[622px]  flex flex-col justify-center px-[175px]">
                 <!-- heading  -->
                 <div class="flex flex-col relative mb-[50px]">
                     <h2 class="text-[#3f4351] text-[40px] font-[700] drop-shadow-md ">BEST</h2>
                     <span
-                        class="absolute  bottom-[-20px] text-[#3f4351] text-[40px] font-[700] opacity-[0.5]">SELLERS</span>
+                        class="absolute  bottom-[-26px] text-[#3f4351] text-[40px] font-[700] opacity-[0.5]">SELLERS</span>
                 </div>
 
-                <div class="w-[1170px] h-[487px] bg-green-500 overflow-x-hidden flex justify-center">
+                <div class="w-[1170px] h-[500px]    ">
+                    <div class="swiper swiper2  slider2 h-[487px] ">
+                        <div class="swiper-wrapper  flex justfy-center items-center">
+
+                            <div class="swiper-slide swiper-slide2 ">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center overflow-hidden  ">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center rounded-2xl ">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class=" card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[400px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide2">
+                                <div class="card px-[35px] py-[26px] rounded-2xl bg-black flex justify-center items-center">
+                                    <div class="w-[366px] h-[435px] bg-transparent flex justify-center items-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination pagination2 hidden"></div>
+                    </div>
+
+                    <!-- Swiper -->
+                    <!-- card 1 -->
+
+                    <!-- <div class="px-[35px] py-[26px]">
+                        <div class="w-[366px] h-[435px] bg-black rounded-2xl "></div>
+                    </div> -->
 
 
                 </div>
@@ -297,11 +372,38 @@
                 delay: 5000,
 
             },
+            effect: "fade",
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
             },
+
         });
+
+        // slider 2 from here
+
+
+
+        var swiper = new Swiper(".slider2", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "3",
+            autoplay:{
+                delay:"4000"
+            },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 135,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".pagination2",
+            },
+        });
+
     </script>
 
 </body>
