@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Buy Cycles Online at Best Price, India | Gear Cycles | Firefox Bikes</title>
 
 </head>
@@ -266,7 +267,7 @@
 
         <!-- best seller's section starts from here -->
 
-        <div class=" w-full h-auto py-[40px] bg-[#000000] ">
+        <div class=" w-full h-auto pt-[40px] bg-[#000000] ">
             <div class="w-full h-[622px]  flex flex-col justify-center px-[175px]">
                 <div class="flex flex-col relative mb-[50px] text-[63px] font-[800]">
                     <h2 class="text-white text-[40px] font-[700] drop-shadow-md ">EXPLORE</h2>
@@ -1000,30 +1001,60 @@
                     </div>
 
                     <!-- slider starts from here -->
-                    <div class="w-[947px] h-[500px] bg-[#00000033] rounded-r-lg"></div>
+                    <div class="w-[947px] h-[500px] bg-[#00000033] rounded-r-lg overflow-hidden">
+
+                    </div>
                 </div>
             </div>
 
             <!-- explore firefox section ends here -->
 
             <!-- hero 2 section starts from here -->
-            <div class="w-full h-[739.062px] relative">
+            <div class="w-full h-[739.062px] relative ">
                 <div class="absolute left-[175px] top-[30px]">
                     <div class="flex flex-col relative mb-[50px] text-[63px] font-[800]">
                         <h2 class="text-white text-[40px] font-[900] drop-shadow-md ">FIREFOX</h2>
                         <span class="absolute  bottom-[-26px] text-[#ffffff] text-[40px] opacity-[0.5] ">EDGE</span>
                     </div>
                 </div>
-                <img src="./Assets/hero2/Firefox-award-Desktop.jpg" alt="">
+                <img class="" src="./Assets/hero2/Firefox-award-Desktop.jpg" alt="">
+            </div>
+            <!-- hero 2 ends here -->
+
+            <!-- hero 3 starts from here -->    
+            <div class=" hero3 w-full h-[540px]  bg-cover px-[175px] pt-[50px] ">
+                <div class="text-white">
+                    <div class="flex flex-col relative mb-[50px] text-[63px] font-[800]">
+                        <h2 class="text-white text-[40px] font-[900] drop-shadow-md ">BIKERS</h2>
+                        <span class="absolute  bottom-[-26px] text-[#ffffff] text-[40px] opacity-[0.5] ">SPEAK</span>
+                    </div>
+                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-[21px] leading-[1.8rem] font-[700] mb-[10px] ">AMROJ <br> SANDHU</h1>
+                    <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500" class="text-[18px] mb-[15px]">Delhi</p>
+                    <p data-aos="fade-right" data-aos-delay="800" data-aos-duration="2000" class="mb-[45px] text-[19px]">Never had a breakdownSince i bought Firefox <br> Bike. My
+                        experience with Nuke
+                        has been really <br> rewarding</p>
+                    <i
+                        class="fa-regular fa-circle-play text-[43px] cursor pointer hover:text-orange-500 duration-200"></i>
+                    <span class="flex items-center gap-x-[25px] mt-[30px]">
+                        <i class="fa-solid fa-angle-left cursor-pounter text-[19px]"></i>
+                        <span class="w-[10px] h-[10px] bg-white rounded-full"></span>
+                        <span class="w-[10px] h-[10px] bg-white rounded-full opacity-[0.5]"></span>
+                        <i class="fa-solid fa-angle-right cursor-pointer text-[19px]"></i>
+
+                    </span>
+                </div>
+                <!-- <img class="h-full scale-[1.3] " src="./Assets/hero3/Homepage_Biker-speak_nuke.jpg" alt=""> -->
             </div>
     </main>
-
-.
 
 
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+
+        AOS.init();
+
         var swiper = new Swiper(".mySwiper", {
             autoplay: {
                 delay: 5000,
@@ -1048,7 +1079,7 @@
             slidesPerView: "3",
             spacebetween: 0,
             autoplay: {
-                delay: "4000"
+                delay: "5000"
             },
             coverflowEffect: {
                 rotate: 50,
@@ -1061,6 +1092,10 @@
                 el: ".pagination2",
             },
         });
+
+        // slider 3
+
+
 
     </script>
 
