@@ -60,6 +60,8 @@ body {
 .hero3{
     background-image: url("./Assets/hero3/Homepage_Biker-speak_nuke.jpg");
     background-repeat:no-repeat;
+} footer{
+    background-image: linear-gradient(to bottom, #919191 -35%, #000 82%);
 }
 
 
